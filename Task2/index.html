@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">⚡ WebApp</div>
+  <nav>
+    <a href="#form">Contact</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+</header>
+
+
+<section class="page" id="form">
+  <div class="card">
+    <h2>📩 Contact Form</h2>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email Address">
+      <input type="tel" id="phone" placeholder="Phone Number">
+      <input type="text" id="subject" placeholder="Subject">
+
+      <select id="country">
+        <option value="">Select Country</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+      </select>
+
+      <textarea id="message" placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+      <p id="formError"></p>
+    </form>
+  </div>
+</section>
+
+
+<section class="page" id="tasks">
+  <div class="card">
+    <h2>📝 Task Manager</h2>
+
+    <div class="row">
+      <input type="text" id="todoInput" placeholder="New task...">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <div id="todoList"></div>
+  </div>
+</section>
+
+
+<section class="page" id="gallery">
+  <div class="card">
+    <h2>🖼️ Image Gallery</h2>
+
+    <div class="row">
+      <input type="text" id="imageURL" placeholder="Image URL">
+      <button onclick="addImage()">Add</button>
+    </div>
+
+    <div id="galleryBox"></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
