@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechVerse</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="bg-gradient"></div>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-cube"></i>
+
+<h2>TechVerse</h2>
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">Responsive</a></li>
+
+<li><a href="#gallery">Carousel</a></li>
+
+<li><a href="#weather">Weather</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+<a href="#gallery" class="nav-btn">
+
+Explore
+
+</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<span class="tag">
+
+Modern UI Project
+
+</span>
+
+<h1>
+
+Interactive Websites
+<br>
+
+Using HTML CSS
+<br>
+
+& JavaScript
+
+</h1>
+
+<p>
+
+A beautiful landing page demonstrating
+Responsive Design,
+Image Carousel,
+Weather API
+and modern frontend development.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#about" class="btn">
+
+Get Started
+
+</a>
+
+<a href="#weather" class="btn outline">
+
+Weather API
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="glass-card">
+
+<div class="mini-card">
+
+<i class="fa-solid fa-mobile-screen"></i>
+
+<h3>Responsive</h3>
+
+<p>Desktop • Tablet • Mobile</p>
+
+</div>
+
+<div class="mini-card">
+
+<i class="fa-solid fa-images"></i>
+
+<h3>Carousel</h3>
+
+<p>JavaScript Slider</p>
+
+</div>
+
+<div class="mini-card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h3>Weather</h3>
+
+<p>Live API</p>
+
+</div>
+
+<div class="mini-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>Fast UI</h3>
+
+<p>Modern Experience</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section
+id="about"
+class="floating left">
+
+<div class="floating-content">
+
+<div class="icon-box">
+
+<i class="fa-solid fa-mobile-screen-button"></i>
+
+</div>
+
+<div>
+
+<h2>
+
+Responsive Design
+
+</h2>
+
+<p>
+
+This website automatically adapts
+to desktop,
+tablet
+and mobile devices
+using CSS Media Queries,
+Flexbox,
+and Grid Layout.
+
+</p>
+
+<div class="skills">
+
+<span>HTML5</span>
+
+<span>CSS3</span>
+
+<span>Flexbox</span>
+
+<span>Grid</span>
+
+<span>Media Queries</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="gallery" class="floating right">
+
+    <div class="section-title">
+
+        <span>Interactive Gallery</span>
+
+        <h2>JavaScript Image Carousel</h2>
+
+        <p>
+            Navigate through images using the previous and next buttons.
+            The images also change automatically every few seconds.
+        </p>
+
+    </div>
+
+    <div class="carousel-container">
+
+        <button class="arrow" id="prev">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+        <div class="carousel-box">
+
+            <img
+                src="images/img1.jpg"
+                id="slider"
+                alt="Carousel Image">
+
+        </div>
+
+        <button class="arrow" id="next">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+    <div class="dots">
+
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        <span class="dot" data-slide="4"></span>
+
+
+    </div>
+
+</section>
+
+
+
+<section id="weather" class="floating left">
+
+    <div class="section-title">
+
+        <span>Live Weather</span>
+
+        <h2>Weather API</h2>
+
+        <p>
+
+            Search any city to view the current weather
+            using JavaScript Fetch API.
+
+        </p>
+
+    </div>
+
+    <div class="weather-box">
+
+        <div class="search-area">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter City Name">
+
+            <button id="searchBtn">
+
+                Search
+
+            </button>
+
+        </div>
+
+        <div id="weatherResult" class="weather-card">
+
+            <i class="fa-solid fa-cloud-sun"></i>
+
+            <h3>
+
+                Weather Information
+
+            </h3>
+
+            <p>
+
+                Search for a city to view weather.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="floating right">
+
+    <div class="section-title">
+
+        <span>Features</span>
+
+        <h2>Project Highlights</h2>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-mobile-screen"></i>
+
+            <h3>Responsive</h3>
+
+            <p>
+
+                Fully responsive layout using media queries.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-images"></i>
+
+            <h3>Carousel</h3>
+
+            <p>
+
+                Interactive image slider using JavaScript.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-cloud"></i>
+
+            <h3>Weather API</h3>
+
+            <p>
+
+                Displays live weather information dynamically.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3>Modern UI</h3>
+
+            <p>
+
+                Glassmorphism with premium animations.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-card">
+
+        <span class="contact-tag">
+
+            Ready to Explore?
+
+        </span>
+
+        <h2>
+
+            Thank You
+            <br>
+            For Visiting TechVerse
+
+        </h2>
+
+        <p>
+
+            This website demonstrates Responsive Design,
+            JavaScript Image Carousel,
+            Fetch API,
+            Modern UI,
+            Media Queries,
+            and Interactive Web Development.
+
+        </p>
+
+        <div class="contact-buttons">
+
+            <a href="#home" class="btn">
+
+                Back To Top
+
+            </a>
+
+            <a href="#gallery" class="btn outline">
+
+                Explore Gallery
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-cube"></i>
+
+            <h2>TechVerse</h2>
+
+        </div>
+
+        <p>
+
+            A modern landing page created using
+            HTML5,
+            CSS3,
+            JavaScript,
+            Responsive Design,
+            Image Carousel
+            and Weather API.
+
+        </p>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-github"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+        </div>
+
+        <div class="line"></div>
+
+        <p class="copyright">
+
+            © 2026 TechVerse | All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
