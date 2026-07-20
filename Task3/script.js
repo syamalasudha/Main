@@ -1,6 +1,4 @@
-/*=========================================
-            IMAGE CAROUSEL
-=========================================*/
+
 
 const images = [
     "images/img1.jpg",
@@ -225,9 +223,7 @@ city.addEventListener("keypress",(e)=>{
 
 });
 
-/*=========================================
-        NAVBAR EFFECT
-=========================================*/
+
 
 const header = document.querySelector("header");
 
@@ -249,9 +245,6 @@ window.addEventListener("scroll",()=>{
 
 });
 
-/*=========================================
-        SCROLL ANIMATION
-=========================================*/
 
 const cards = document.querySelectorAll(".floating");
 
@@ -282,9 +275,7 @@ cards.forEach(card=>{
 
 });
 
-/*=========================================
-        HERO CARD EFFECT
-=========================================*/
+
 
 const glass = document.querySelector(".glass-card");
 
@@ -300,9 +291,7 @@ document.addEventListener("mousemove",(e)=>{
 
 });
 
-/*=========================================
-        BUTTON HOVER
-=========================================*/
+
 
 document.querySelectorAll(".btn,.nav-btn")
 .forEach(btn=>{
@@ -321,9 +310,6 @@ document.querySelectorAll(".btn,.nav-btn")
 
 });
 
-/*=========================================
-        FOOTER YEAR
-=========================================*/
 
 const copy = document.querySelector(".copyright");
 
